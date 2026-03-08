@@ -278,9 +278,146 @@ body {
     transform: scale(0.95);
 }
 
+/* --- Tools Section --- */
+.tools {
+    background-color: var(--white);
+}
+
+.section-desc {
+    margin: 1.5rem auto 0;
+    color: var(--text-muted);
+    font-size: 1rem;
+    max-width: 600px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.tool-layout {
+    margin-top: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Google Suite Group */
+.tool-group {
+    background: #F1F5F9;
+    padding: 2rem 1.5rem;
+    border-radius: var(--radius-md);
+    border: 1px dashed #CBD5E1;
+}
+
+.group-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.group-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+}
+
+.platform-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+}
+
+.tool-card {
+    background: var(--white);
+    padding: 1rem 0.5rem;
+    border-radius: var(--radius-md);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid transparent;
+    transition: var(--transit);
+    height: 100%;
+}
+
+.tool-card.mini {
+    padding: 0.75rem 0.25rem;
+}
+
+.tool-card.highlight {
+    background: var(--white);
+    border-bottom: 3px solid var(--accent);
+}
+
+.tool-card.accent-ai {
+    background: linear-gradient(to bottom right, #FFFFFF, #EFF6FF);
+}
+
+.tool-logo-box {
+    width: 44px;
+    height: 44px;
+    background: var(--bg-sub);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.75rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.tool-logo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 8px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tool-logo[src^="img/"] {
+    opacity: 1;
+}
+
+.tool-name {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--text-main);
+    text-align: center;
+    white-space: nowrap;
+}
+
 @media (min-width: 768px) {
-    .work-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .tool-layout {
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    .tool-group {
+        flex: 1.2;
+    }
+
+    .platform-grid {
+        flex: 2;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .tool-logo-box {
+        width: 52px;
+        height: 52px;
+    }
+
+    .tool-name {
+        font-size: 0.85rem;
+    }
+
+    .tool-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.05);
+        border-color: var(--accent);
     }
 
     .hero-title {
