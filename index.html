@@ -35,7 +35,7 @@
             </div>
         </section>
 
-        <section class="works section-padding">
+        <section class="works section-padding" id="works">
             <div class="container">
                 <div class="section-title">
                     <p class="sub-title">Packages</p>
@@ -44,13 +44,25 @@
 
                 <div class="work-grid">
                     <article class="work-card">
-                        <div class="work-image bakery">🥖</div>
+                        <div class="work-image expense">💴</div>
                         <div class="work-content">
-                            <span class="category">製造・飲食</span>
-                            <h3>製造TODO アシストメーカー</h3>
-                            <p class="problem">バラバラの注文を電卓で集計する毎朝のパニックを解決。</p>
+                            <span class="category">経理・事務</span>
+                            <h3>レシート精算 LINE Bot</h3>
+                            <p class="problem">領収書をLINEに送るだけで、帳簿が完成。レシート紛失や入力漏れをゼロに。</p>
                             <div class="result">
-                                <span class="r-badge">効果</span> 毎朝の集計 30分 → 0秒
+                                <span class="r-badge">効果</span> 毎月の経理作業を1/10に削減
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="work-card">
+                        <div class="work-image invoice">📑</div>
+                        <div class="work-content">
+                            <span class="category">卸売・事務</span>
+                            <h3>ワンクリック請求書システム</h3>
+                            <p class="problem">受注データから請求書を自動発行。メール送付までをワンクリックで完結。</p>
+                            <div class="result">
+                                <span class="r-badge">効果</span> 1日の事務作業を「数分」に短縮
                             </div>
                         </div>
                     </article>
@@ -60,7 +72,7 @@
                         <div class="work-content">
                             <span class="category">小売・カフェ</span>
                             <h3>LINE店舗サブスク</h3>
-                            <p class="problem">高額なアプリ開発なしで、LINEだけでサブスクを開始。</p>
+                            <p class="problem">高額なアプリ開発なしで、普段のLINEだけでサブスクを開始。</p>
                             <div class="result">
                                 <span class="r-badge">効果</span> 月額0円、決済手数料のみ
                             </div>
@@ -68,127 +80,151 @@
                     </article>
 
                     <article class="work-card">
-                        <div class="work-image expense">💴</div>
+                        <div class="work-image bakery">🥖</div>
                         <div class="work-content">
-                            <span class="category">経理・事務</span>
-                            <h3>レシート精算 LINE Bot</h3>
-                            <p class="problem">写真を送るだけで帳簿が完成。レシート紛失をゼロに。</p>
+                            <span class="category">製造・飲食</span>
+                            <h3>製造TODO アシストメーカー</h3>
+                            <p class="problem">バラバラの注文を自動で集計。毎朝の「パニック」を「製造への集中」に変える。</p>
                             <div class="result">
-                                <span class="r-badge">効果</span> 経理入力作業を1/10に削減
+                                <span class="r-badge">効果</span> 毎朝の集計 30分 → 0秒
                             </div>
                         </div>
                     </article>
+                </div>
 
-                    <article class="work-card">
-                        <div class="work-image invoice">📑</div>
-                        <div class="work-content">
-                            <span class="category">卸売・BtoB</span>
-                            <h3>ワンクリック請求書システム</h3>
-                            <p class="problem">毎月の請求書作成と送付を自動化、数分で完了。</p>
-                            <div class="result">
-                                <span class="r-badge">効果</span> 1日の大仕事が数分に短縮
-                            </div>
-                        </div>
-                    </article>
+                <div class="works-more">
+                    <a href="works.html" class="btn-outline">これまでの実績をもっと見る</a>
                 </div>
             </div>
         </section>
 
         <section class="tools section-padding">
-            <div class="container">
-                <div class="section-title">
-                    <p class="sub-title">Integrations</p>
-                    <h2>使い慣れた道具を、最強のチームに。</h2>
-                    <p class="section-desc">Googleフォーム、スプレッドシート、LINE、Notion。今現場にあるツールを賢くつなぎ合わせ、あなた専用の仕組みを構築します。</p>
-                </div>
 
-                <div class="tool-layout">
-                    <!-- Google Ecosystem Group -->
-                    <div class="tool-group">
-                        <p class="group-label">Google 業務改善スイート</p>
-                        <div class="group-grid">
-                            <div class="tool-card mini">
-                                <div class="tool-logo-box">
-                                    <img src="img/logo-forms.png" alt="Google Forms" class="tool-logo">
+            <section class="tools section-padding">
+                <div class="container">
+                    <div class="section-title">
+                        <p class="sub-title">Integrations</p>
+                        <h2>使い慣れた道具を、最強のチームに。</h2>
+                        <p class="section-desc">Googleフォーム、スプレッドシート、LINE、Notion。今現場にあるツールを賢くつなぎ合わせ、あなた専用の仕組みを構築します。</p>
+                    </div>
+
+                    <div class="tool-layout">
+                        <!-- Google Ecosystem Group -->
+                        <div class="tool-group">
+                            <p class="group-label">Google 業務改善スイート</p>
+                            <div class="group-grid">
+                                <div class="tool-card mini">
+                                    <div class="tool-logo-box">
+                                        <img src="img/logo-forms.png" alt="Google Forms" class="tool-logo">
+                                    </div>
+                                    <span class="tool-name">フォーム</span>
                                 </div>
-                                <span class="tool-name">フォーム</span>
+                                <div class="tool-card mini">
+                                    <div class="tool-logo-box">
+                                        <img src="img/logo-sheets.png" alt="Google Sheets" class="tool-logo">
+                                    </div>
+                                    <span class="tool-name">シート</span>
+                                </div>
+                                <div class="tool-card mini highlight">
+                                    <div class="tool-logo-box">
+                                        <img src="img/logo-gas.png" alt="Google Apps Script" class="tool-logo">
+                                    </div>
+                                    <span class="tool-name">GAS(自動化)</span>
+                                </div>
                             </div>
-                            <div class="tool-card mini">
+                        </div>
+
+                        <!-- Other Platforms -->
+                        <div class="platform-grid">
+                            <div class="tool-card">
                                 <div class="tool-logo-box">
-                                    <img src="img/logo-sheets.png" alt="Google Sheets" class="tool-logo">
+                                    <img src="img/logo-line.png" alt="LINE" class="tool-logo">
                                 </div>
-                                <span class="tool-name">シート</span>
+                                <span class="tool-name">LINE</span>
                             </div>
-                            <div class="tool-card mini highlight">
+                            <div class="tool-card">
                                 <div class="tool-logo-box">
-                                    <img src="img/logo-gas.png" alt="Google Apps Script" class="tool-logo">
+                                    <img src="img/logo-base.png" alt="BASE" class="tool-logo">
                                 </div>
-                                <span class="tool-name">GAS(自動化)</span>
+                                <span class="tool-name">BASE</span>
+                            </div>
+                            <div class="tool-card">
+                                <div class="tool-logo-box">
+                                    <img src="img/logo-notion.png" alt="Notion" class="tool-logo">
+                                </div>
+                                <span class="tool-name">Notion</span>
+                            </div>
+                            <div class="tool-card">
+                                <div class="tool-logo-box">
+                                    <img src="img/logo-slack.png" alt="Slack" class="tool-logo">
+                                </div>
+                                <span class="tool-name">Slack</span>
+                            </div>
+                            <div class="tool-card">
+                                <div class="tool-logo-box">
+                                    <img src="img/logo-discord.png" alt="Discord" class="tool-logo">
+                                </div>
+                                <span class="tool-name">Discord</span>
+                            </div>
+                            <div class="tool-card accent-ai">
+                                <div class="tool-logo-box">
+                                    <img src="img/logo-ai.png" alt="AI / LLM" class="tool-logo">
+                                </div>
+                                <span class="tool-name">AI / LLM</span>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Other Platforms -->
-                    <div class="platform-grid">
-                        <div class="tool-card">
-                            <div class="tool-logo-box">
-                                <img src="img/logo-line.png" alt="LINE" class="tool-logo">
-                            </div>
-                            <span class="tool-name">LINE</span>
-                        </div>
-                        <div class="tool-card">
-                            <div class="tool-logo-box">
-                                <img src="img/logo-base.png" alt="BASE" class="tool-logo">
-                            </div>
-                            <span class="tool-name">BASE</span>
-                        </div>
-                        <div class="tool-card">
-                            <div class="tool-logo-box">
-                                <img src="img/logo-notion.png" alt="Notion" class="tool-logo">
-                            </div>
-                            <span class="tool-name">Notion</span>
-                        </div>
-                        <div class="tool-card">
-                            <div class="tool-logo-box">
-                                <img src="img/logo-slack.png" alt="Slack" class="tool-logo">
-                            </div>
-                            <span class="tool-name">Slack</span>
-                        </div>
-                        <div class="tool-card">
-                            <div class="tool-logo-box">
-                                <img src="img/logo-discord.png" alt="Discord" class="tool-logo">
-                            </div>
-                            <span class="tool-name">Discord</span>
-                        </div>
-                        <div class="tool-card accent-ai">
-                            <div class="tool-logo-box">
-                                <img src="img/logo-ai.png" alt="AI / LLM" class="tool-logo">
-                            </div>
-                            <span class="tool-name">AI / LLM</span>
-                        </div>
-                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="philosophy section-padding">
-            <div class="container philosophy-inner">
-                <h2>最初から完璧は、目指しません。</h2>
-                <p>
-                    立派なシステムを入れても、現場の人が「使いにくい」と言えば数ヶ月でExcel入力に戻ってしまいます。
-                    大切にしているのは、<strong>「小さく始めて、現場と一緒に育てていく」</strong>こと。
-                    毎週少しずつアップデートし、あなたのお店にジャストフィットするシステムを仕立てます。
-                </p>
-            </div>
-        </section>
+            <section class="philosophy section-padding">
+                <div class="container philosophy-inner">
+                    <h2>最初から完璧は、目指しません。</h2>
+                    <p>
+                        立派なシステムを入れても、現場の人が「使いにくい」と言えば数ヶ月でExcel入力に戻ってしまいます。
+                        大切にしているのは、<strong>「小さく始めて、現場と一緒に育てていく」</strong>こと。
+                        毎週少しずつアップデートし、あなたのお店にジャストフィットするシステムを仕立てます。
+                    </p>
+                </div>
+            </section>
     </main>
 
-    <footer id="contact" class="footer">
-        <div class="container text-center">
-            <h2 class="footer-title">「うちのこの作業、自動化できる？」</h2>
-            <p class="footer-text">そんな些細な疑問からお気軽にご相談ください。</p>
-            <a href="#" class="btn-primary-large">無料相談・デモを希望</a>
-            <p class="copyright">&copy; 2026 THE LOCAL DX.</p>
+    <footer id="contact" class="footer section-padding">
+        <div class="container">
+            <div class="section-title text-center">
+                <p class="sub-title">Contact</p>
+                <h2 class="footer-title">「うちのこの作業、自動化できる？」</h2>
+                <p class="footer-text">そんな些細な疑問からお気軽にご相談ください。</p>
+            </div>
+
+            <form action="https://formsubmit.co/shtorishir0816@gmail.com" method="POST" class="contact-form">
+                <!-- フォーム送信後のリダイレクト先（必要あれば） -->
+                <input type="hidden" name="_next" value="https://sei0816.github.io/the-local-system/index.html">
+                <!-- スパム防止のキャプチャ無効化（必要あれば） -->
+                <input type="hidden" name="_captcha" value="false">
+
+                <div class="form-group">
+                    <label for="name">お名前</label>
+                    <input type="text" name="name" id="name" placeholder="山田 太郎" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">メールアドレス</label>
+                    <input type="email" name="email" id="email" placeholder="example@mail.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">ご相談内容</label>
+                    <textarea name="message" id="message" rows="5" placeholder="自動化したい業務や、現在の課題についてお聞かせください"
+                        required></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary-large">この内容で相談する（無料）</button>
+            </form>
+
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 THE LOCAL DX.</p>
+            </div>
         </div>
     </footer>
 

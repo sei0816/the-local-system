@@ -229,22 +229,97 @@ body {
     color: #94A3B8;
 }
 
-/* Footer */
-.footer {
-    padding-top: clamp(80px, 10vw, 120px);
-    padding-bottom: 120px;
+/* Works More Button */
+.works-more {
+    margin-top: 4rem;
     text-align: center;
 }
 
-.btn-primary-large {
-    display: block;
-    background: var(--accent);
-    color: var(--white);
+.btn-outline {
+    display: inline-block;
+    padding: 16px 32px;
+    border: 2px solid var(--accent);
+    color: var(--accent);
     text-decoration: none;
-    padding: 18px;
     border-radius: 50px;
     font-weight: 700;
-    margin: 3rem 0;
+    transition: var(--transit);
+}
+
+.btn-outline:hover {
+    background: var(--accent);
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px var(--accent-glow);
+}
+
+/* Footer & Contact Form */
+.footer {
+    background: var(--bg-sub);
+}
+
+.footer-bottom {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid #E2E8F0;
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 3rem auto 0;
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: var(--radius-md);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-main);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #E2E8F0;
+    border-radius: 12px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: var(--transit);
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 4px var(--accent-glow);
+}
+
+.btn-primary-large {
+    width: 100%;
+    background: var(--accent);
+    color: var(--white);
+    border: none;
+    padding: 18px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transit);
+}
+
+.btn-primary-large:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px var(--accent-glow);
 }
 
 /* Mobile Fixed CTA */
